@@ -1,4 +1,4 @@
-# CRICBOT-CHATBOT-FOR-SCORES
+# CRICBOT-FOR-SCORES
 
 A straightforward chatbot created using the CRICBUZZ API for retrieving scores and other details pertaining to the match. An additional simple Frontend app has been created using Bootstrap CSS framework.
 
