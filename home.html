@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket Score Chatbot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styling */
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            border-bottom: none;
+        }
+        .card-body {
+            padding: 40px;
+        }
+        h3 {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .form-group input {
+            border-radius: 25px;
+            padding-left: 25px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="mb-0">Cricket Score Chatbot</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-4">Enter the match ID for the match you want to retrieve scores for:</p>
+                        <form action="/scores" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="match_id" required placeholder="Match ID">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Get Scores</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
